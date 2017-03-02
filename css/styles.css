@@ -1,0 +1,204 @@
+@font-face {
+  font-family: "HelveticaRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HelveticaRegular/Helvetica.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaRegular/Helvetica.woff") format("woff"), url("../fonts/HelveticaRegular/Helvetica.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "HelveticaBold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/HelveticaBold/HelveticaBold.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaBold/HelveticaBold.woff") format("woff"), url("../fonts/HelveticaBold/HelveticaBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "HelveticaLight";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HelveticaLight/HelveticaLight.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaLight/HelveticaLight.woff") format("woff"), url("../fonts/HelveticaLight/HelveticaLight.ttf") format("truetype"); }
+
+/* General reset start */
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px #fff inset;
+  -webkit-text-fill-color: #333; }
+
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 50px #fff inset;
+  -webkit-text-fill-color: #333; }
+
+*::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 1; }
+
+*:-moz-placeholder {
+  color: #fff;
+  opacity: 1; }
+
+*::-moz-placeholder {
+  color: #fff;
+  opacity: 1; }
+
+*:-ms-input-placeholder {
+  color: #fff;
+  opacity: 1; }
+
+form, fieldset {
+  margin: 0;
+  padding: 0;
+  border-style: none; }
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box; }
+
+mark {
+  background: none; }
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+img {
+  border-style: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+li {
+  margin: 0; }
+
+img {
+  border-style: none;
+  display: block; }
+
+input,
+select,
+textarea {
+  vertical-align: middle;
+  font: 100% arial, helvetica, sans-serif; }
+
+a {
+  color: #000;
+  text-decoration: none; }
+
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+  outline: none;
+  color: #000; }
+
+a:hover,
+a:focus {
+  color: #000; }
+
+button,
+button:hover,
+button:active {
+  outline: none; }
+
+/* General reset end */
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both; }
+
+body {
+  font-family: "HelveticaRegular";
+  font-size: 14px;
+  line-height: 1.1;
+  color: #313131;
+  margin: 0;
+  min-width: 320px;
+  background: #f5f5f5; }
+
+.indicators {
+  max-width: 830px;
+  margin: 0 auto;
+  padding-top: 117px;
+  text-align: center; }
+
+h2 {
+  font-family: "HelveticaLight";
+  font-size: 30px;
+  margin-bottom: 76px; }
+
+.ind-row {
+  padding: 14px 10px 14px 16px;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+  overflow: hidden; }
+  .ind-row:first-child {
+    border-top: none; }
+  .ind-row:last-child {
+    border-bottom: none; }
+
+.ind-row_left {
+  width: 53%;
+  text-align: left;
+  float: left; }
+
+.ind-icon {
+  width: 57px;
+  height: 41px;
+  background: url("../img/indicators-icons-sprite.png") no-repeat 0 -8px;
+  margin-right: 6%;
+  display: inline-block;
+  vertical-align: middle; }
+  .ind-icon.ico-cashbox {
+    background-position: 0 -8px; }
+  .ind-icon.ico-bets {
+    background-position: -55px -8px; }
+  .ind-icon.ico-live {
+    background-position: -111px -8px; }
+  .ind-icon.ico-cardreader {
+    background-position: -168px -8px; }
+  .ind-icon.ico-internet {
+    background-position: -224px -8px; }
+  .ind-icon.ico-win {
+    background-position: -282px -8px; }
+  .ind-icon.ico-tracert {
+    background-position: -336px -8px; }
+
+.ind-row_heading {
+  text-align: left;
+  display: inline-block;
+  vertical-align: middle; }
+
+h3 {
+  font-family: "HelveticaBold";
+  font-size: 14px; }
+
+.ind-row_subheading {
+  font-family: "HelveticaRegular";
+  font-size: 12px;
+  color: #5b829e; }
+
+.ind-row_heading-top {
+  vertical-align: top; }
+  .ind-row_heading-top h3 {
+    margin-bottom: 5px; }
+
+.ind-row_center {
+  float: left; }
+
+.btn-go {
+  display: block;
+  width: 148px;
+  margin-top: 4px;
+  font-size: 14px;
+  line-height: 35px;
+  font-family: "HelveticaBold";
+  color: #f5f5f5;
+  background: -webkit-linear-gradient(top, #abd6e5, #67b0d7) repeat-y 0 0;
+  border-radius: 15px;
+  float: left; }

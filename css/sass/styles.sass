@@ -1,0 +1,104 @@
+@import 'bourbon/bourbon'
+@import fonts
+@import reset
+
+.clearfix
+	&:after
+		content: ""
+		display: block
+		clear: both
+
+body
+	font-family: "HelveticaRegular"
+	font-size: 14px
+	line-height: 1.1
+	color: #313131
+	margin: 0
+	min-width: 320px
+	background: #f5f5f5
+
+.indicators
+	max-width: 830px
+	margin: 0 auto
+	padding-top: 117px
+	text-align: center
+
+h2
+	font-family: "HelveticaLight"
+	font-size: 30px
+	margin-bottom: 76px
+
+.ind-row
+	padding: 14px 10px 14px 16px
+	border-top: 1px solid #dedede
+	border-bottom: 1px solid #dedede
+	overflow: hidden
+	&:first-child
+		border-top: none
+	&:last-child
+		border-bottom: none
+
+.ind-row_left
+	// float: left
+	width: 53%
+	text-align: left
+	float: left
+
+.ind-icon
+	width: 57px
+	height: 41px
+	background: url('../img/indicators-icons-sprite.png') no-repeat 0 -8px
+	// float: left
+	margin-right: 6%
+	display: inline-block // vert-align
+	vertical-align: middle
+	&.ico-cashbox
+		background-position: 0 -8px
+	&.ico-bets
+		background-position: -55px -8px
+	&.ico-live
+		background-position: -111px -8px
+	&.ico-cardreader
+		background-position: -168px -8px
+	&.ico-internet
+		background-position: -224px -8px
+	&.ico-win
+		background-position: -282px -8px
+	&.ico-tracert
+		background-position: -336px -8px
+
+.ind-row_heading
+	text-align: left
+	// float: left
+	display: inline-block // vert-align
+	vertical-align: middle
+
+h3
+	font-family: "HelveticaBold"
+	font-size: 14px
+	// padding-top: 12px
+
+.ind-row_subheading
+  font-family: "HelveticaRegular"
+  font-size: 12px
+  color: #5b829e
+
+.ind-row_heading-top
+	vertical-align: top
+	h3
+		margin-bottom: 5px
+
+.ind-row_center
+	float: left
+
+.btn-go
+	display: block
+	width: 148px
+	margin-top: 4px
+	font-size: 14px
+	line-height: 35px
+	font-family: "HelveticaBold"
+	color: #f5f5f5
+	background: -webkit-linear-gradient(top, #abd6e5, #67b0d7) repeat-y 0 0
+	border-radius: 15px
+	float: left
