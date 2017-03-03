@@ -134,14 +134,13 @@ h2 {
 
 .ind-row {
   padding: 14px 7px 14px 16px;
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid #e7e7e7;
   overflow: hidden; }
   .ind-row:last-child {
     border-bottom: none; }
 
 .ind-row.ind-row_active {
-  background-color: #ebebeb;
-  border: none; }
+  background-color: #e7e7e7; }
 
 .ind-row_left {
   width: 53%;
@@ -173,13 +172,14 @@ h2 {
 .ind-row_heading {
   text-align: left;
   display: inline-block;
-  vertical-align: middle; }
-
-h3 {
-  font-family: "HelveticaBold";
-  font-size: 14px; }
+  vertical-align: middle;
+  width: 75%; }
+  .ind-row_heading h3 {
+    font-family: "HelveticaBold";
+    font-size: 14px; }
 
 .ind-row_subheading {
+  display: block;
   font-family: "HelveticaRegular";
   font-size: 12px;
   color: #5b829e; }
@@ -233,7 +233,7 @@ h3 {
   display: inline-block;
   vertical-align: middle;
   float: right;
-  margin-top: 6px; }
+  margin-top: 5px; }
 
 .ind-checkbox {
   position: relative;

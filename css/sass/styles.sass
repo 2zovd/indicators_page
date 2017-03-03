@@ -2,6 +2,7 @@
 @import fonts
 @import reset
 
+
 .clearfix
 	&:after
 		content: ""
@@ -30,13 +31,12 @@ h2
 
 .ind-row
 	padding: 14px 7px 14px 16px
-	border-bottom: 1px solid #dedede
+	border-bottom: 1px solid #e7e7e7
 	overflow: hidden
 	&:last-child
 		border-bottom: none
 .ind-row.ind-row_active
-	background-color: #ebebeb
-	border: none
+	background-color: #e7e7e7
 
 .ind-row_left
 	width: 53%
@@ -69,15 +69,16 @@ h2
 	text-align: left
 	display: inline-block // vert-align
 	vertical-align: middle
-
-h3
-	font-family: "HelveticaBold"
-	font-size: 14px
+	width: 75%;
+	h3
+		font-family: "HelveticaBold"
+		font-size: 14px
 
 .ind-row_subheading
-  font-family: "HelveticaRegular"
-  font-size: 12px
-  color: #5b829e
+	display: block
+	font-family: "HelveticaRegular"
+	font-size: 12px
+	color: #5b829e
 
 .ind-row_heading-top
 	vertical-align: top
@@ -130,7 +131,7 @@ h3
 	display: inline-block
 	vertical-align: middle
 	float: right
-	margin-top: 6px
+	margin-top: 5px
 
 .ind-checkbox
 	position: relative
