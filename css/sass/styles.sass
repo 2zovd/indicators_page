@@ -29,17 +29,16 @@ h2
 	margin-bottom: 76px
 
 .ind-row
-	padding: 14px 10px 14px 16px
-	border-top: 1px solid #dedede
+	padding: 14px 7px 14px 16px
 	border-bottom: 1px solid #dedede
 	overflow: hidden
-	&:first-child
-		border-top: none
 	&:last-child
 		border-bottom: none
+.ind-row.ind-row_active
+	background-color: #ebebeb
+	border: none
 
 .ind-row_left
-	// float: left
 	width: 53%
 	text-align: left
 	float: left
@@ -48,9 +47,8 @@ h2
 	width: 57px
 	height: 41px
 	background: url('../img/indicators-icons-sprite.png') no-repeat 0 -8px
-	// float: left
 	margin-right: 6%
-	display: inline-block // vert-align
+	display: inline-block
 	vertical-align: middle
 	&.ico-cashbox
 		background-position: 0 -8px
@@ -69,14 +67,12 @@ h2
 
 .ind-row_heading
 	text-align: left
-	// float: left
 	display: inline-block // vert-align
 	vertical-align: middle
 
 h3
 	font-family: "HelveticaBold"
 	font-size: 14px
-	// padding-top: 12px
 
 .ind-row_subheading
   font-family: "HelveticaRegular"
@@ -92,13 +88,86 @@ h3
 	float: left
 
 .btn-go
-	display: block
-	width: 148px
+	float: left
 	margin-top: 4px
+	padding: 0 45px
 	font-size: 14px
-	line-height: 35px
+	line-height: 33px
+	border-radius: 20px
 	font-family: "HelveticaBold"
 	color: #f5f5f5
 	background: -webkit-linear-gradient(top, #abd6e5, #67b0d7) repeat-y 0 0
-	border-radius: 15px
+	box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.2), 0 -1px 7px -3px rgba(0, 0, 0, 0.2)
+	border-top: 1px solid #8cc2d9
+	border-bottom: 1px solid #8cc2d9
+	&:hover,
+	&:active,
+	&:visited
+		color: #fff
+	&:active
+		box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.2), 0 -1px 7px -3px rgba(0, 0, 0, 0.2), 0 0 20px 0px rgba(0, 0, 0, 0.2) inset
+		background: -webkit-linear-gradient(top, #abd6e5, #67b0d7) repeat-y 0 0
+
+.ind-row_right
+	width: 13.3%
+	float: right
+	margin-top: 5px
+
+.ico-marker
 	float: left
+	width: 29px
+	height: 29px
+	background: url('../img/icons-sprite.png') no-repeat 0 0
+
+.ind-row_right.ico-marker_disabled
+	.ico-marker
+		background-position: -29px 0
+	.ind-row_timer
+		display: none
+
+.ind-row_timer
+	font-size: 16px
+	display: inline-block
+	vertical-align: middle
+	float: right
+	margin-top: 6px
+
+.ind-checkbox
+	position: relative
+	width: 98px
+	height: 42px
+	margin-left: 28px;
+	input[type=checkbox]
+		display: none
+	label
+		cursor: pointer
+	input[type=checkbox] + label:before
+		content: ''
+		position: absolute
+		left: 0
+		top: 0
+		width: 98px
+		height: 42px
+		background: url('../img/checkbox-switcher-bg.png') no-repeat 0 -42px
+		background-size: cover
+		border-radius: 35px
+	input[type=checkbox] + label:after
+		content: ''
+		position: absolute
+		display: block
+		width: 49px
+		height: 36px
+		cursor: pointer
+		background: url('../img/checkbox-switcher.png') no-repeat 0 0
+		top: 5px
+		left: 4px
+		z-index: 1
+		-webkit-transition: all .4s ease
+		-o-transition: all .4s ease
+		transition: all .4s ease
+		transition: all .4s ease
+	input[type=checkbox]:checked + label:before 
+		background-position: 0 0
+	input[type=checkbox]:checked + label:after 
+		left: 45px
+
